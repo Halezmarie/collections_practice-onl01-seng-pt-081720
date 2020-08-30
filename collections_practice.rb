@@ -63,19 +63,3 @@ def add_s (array)
     end
   end
 end
-
-
-
-def count_words (words)
-  story_count = Hash.new
-
-  words.split.each do |word|
-    if story_count.include?(word)
-      story_count[word] = story_count[word] + 1
-    else
-      story_count[word] = 1
-    end
-  end
-
-  story_count
-end

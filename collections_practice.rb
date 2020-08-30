@@ -35,6 +35,11 @@ def find_a (array)
   end
 end
 
+def sort_array_char_count(array)	
+  array.sort do |left, right|	
+    left.length <=> right.length	
+  end	
+end
 
 
 def sum_array (array)

@@ -8,6 +8,12 @@ def sort_array_desc (array)
   array.sort {|x,y| y <=> x }
 end
 
+def kesha_maker (array)
+  array.collect do |element|
+    element[2] = "$"
+    element
+  end
+end
 
 
 def swap_elements (array)
@@ -20,16 +26,6 @@ end
 def reverse_array (array)
   array.reverse
 end
-
-
-
-def kesha_maker (array)
-  array.collect do |element|
-    element[2] = "$"
-    element
-  end
-end
-
 
 
 def greater_and_less_than_10 (array)

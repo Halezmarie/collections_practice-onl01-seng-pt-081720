@@ -28,23 +28,6 @@ def reverse_array (array)
 end
 
 
-def greater_and_less_than_10 (array)
-  hash = {
-    "greater_than_10" => [],
-    "less_than_10" => []
-  }
-  array.each do |number|
-    if number > 10 
-      hash["greater_than_10"] << number 
-    else
-      hash["less_than_10"] << number
-    end
-  end
-  hash
-end
-
-
-
 def find_winners (hash)
   winners = []
   hash.each do |name, status| 

@@ -28,15 +28,6 @@ def reverse_array (array)
 end
 
 
-def find_winners (hash)
-  winners = []
-  hash.each do |name, status| 
-    winners << name if status == "winner"
-  end
-  winners
-end
-
-
 
 def find_a (array)
   array.select do |word|
